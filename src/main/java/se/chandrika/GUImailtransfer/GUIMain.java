@@ -7,10 +7,10 @@ public class GUIMain {
 
     public static void main(String[] args) {
 
-        Email email = new Email("chandrika.kovvuri@gmail.com","enaw encs tdmb pddv");
+        Email email = new Email("********@gmail.com","**********");
         SendMail sendmail = new SendMail(email);
 
-        Mail mail = new Mail("chandrika.kovvuri@gmail.com", "hello", "GUI mail", null);
+        Mail mail = new Mail("***********@gmail.com", "hello", "GUI mail", null);
         GUI gui = new GUI();
         mail = gui.showEmailPanel();
 
