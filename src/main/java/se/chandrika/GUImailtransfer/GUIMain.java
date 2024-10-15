@@ -10,9 +10,8 @@ public class GUIMain {
         Email email = new Email("********@gmail.com","**********");
         SendMail sendmail = new SendMail(email);
 
-        Mail mail = new Mail("***********@gmail.com", "hello", "GUI mail", null);
         GUI gui = new GUI();
-        mail = gui.showEmailPanel();
+        Mail mail = gui.showEmailPanel();
 
         if (mail != null) {
             sendmail.sendEmail(mail.getTo(), mail.getSubject(), mail.getText());
